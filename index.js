@@ -16,7 +16,7 @@ app.use(express.json({limit: '5mb'}));
 app.use(express.urlencoded({limit: '5mb',extended:false}));
 app.listen(process.env.PORT,()=>{console.log('server is running');})
 app.use(cors({
-    origin: ['http://192.168.1.3:3500','http://192.168.1.3:3000','http://localhost:3000','http://localhost:3500']
+    origin: ['http://192.168.1.3:3500','http://192.168.1.3:3000','http://localhost:3000','http://localhost:3500',"http://178.62.76.207:3500"]
 }));
 
 //mongodb
