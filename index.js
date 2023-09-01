@@ -45,6 +45,17 @@ app.use("/api/course", require("./routes/courseroutes"));
 app.use("/api/product", require("./routes/productsroutes"));
 app.use("/api/order", require("./routes/orderroutes"));
 
+
+
+app.use((req, res, next) => {
+  if (req.hostname === 'example.com') {
+    return res.redirect(301, `https://www.${req.hostname}${req.url}`);
+  }
+  next();
+});
+
+
+
 //dos protect
 app.use(function(req, res, next) {
     if (toobusy()) {
