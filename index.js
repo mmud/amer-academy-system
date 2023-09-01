@@ -1,4 +1,5 @@
 const express = require('express');
+import https from "https"
 require('dotenv').config();
 const mongoose = require('mongoose');
 const {protect}= require("./authMiddleware")
@@ -14,7 +15,12 @@ var toobusy = require('toobusy-js')
 const app=express();
 app.use(express.json({limit: '5mb'}));
 app.use(express.urlencoded({limit: '5mb',extended:false}));
-app.listen(process.env.PORT,()=>{console.log('server is running');})
+
+const key = fs.readFileSync('./privkey.pem',"utf-8")
+const cert = fs.readFileSync('./cert.pem',"utf-8")
+const listener =()=>console.log('server is running');
+https.createServer({key,cert},app).listen(process.env.PORT,listener)
+
 app.use(cors({
     origin: ['http://192.168.1.3:3500','http://192.168.1.3:3000','http://localhost:3000','http://localhost:3500',"http://178.62.76.207:3500"]
 }));
@@ -48,8 +54,8 @@ app.use("/api/order", require("./routes/orderroutes"));
 
 
 app.use((req, res, next) => {
-  if (req.hostname === 'example.com') {
-    return res.redirect(301, `https://www.${req.hostname}${req.url}`);
+  if (req.hostname === 'www.amer-academy.com') {
+    return res.redirect(301, `https://${req.hostname}${req.url}`);
   }
   next();
 });
