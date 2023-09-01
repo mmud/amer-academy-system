@@ -1,5 +1,5 @@
 const express = require('express');
-import https from "https"
+const https = require("https");
 require('dotenv').config();
 const mongoose = require('mongoose');
 const {protect}= require("./authMiddleware")
