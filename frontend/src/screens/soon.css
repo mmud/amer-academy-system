@@ -1,0 +1,20 @@
+h1.soon{
+    color: #1f2021;
+    font-size: 100px;
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+    -webkit-transform: translatex(-50%);
+    -moz-transform: translatex(-50%);
+    -ms-transform: translatex(-50%);
+    -o-transform: translatex(-50%);
+    top: 400px;
+}
+
+
+@media (max-width:576px) {
+    h1.soon{
+        font-size: 80px;
+        top: 200px;
+    }
+}

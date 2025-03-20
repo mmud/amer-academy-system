@@ -1,0 +1,80 @@
+
+
+.settingsright input {
+    font-family: "Roboto", sans-serif;
+    outline: 0;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 5px 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.settingsright button {
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: #f48021;
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+}
+
+.settingsright button:hover,.form button:active,.form button:focus {
+    background: #bd631a;
+}
+
+.settingsleft img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.settingsleft .uploadbtn{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #363636b4;
+    cursor: pointer;
+}
+
+.settings{
+    display: flex;
+    margin-top: 100px;
+    align-items: center;
+}
+
+.settingsright{
+    width: 50%;
+}
+
+.settingsleft{
+    width: 50%;
+}
+
+@media (max-width:768px) {
+    .settings{
+       flex-direction: column-reverse;
+    }
+
+    .settingsright{
+        width: 100%;
+    }
+    
+    .settingsleft{
+        width: 100%;
+    }
+}

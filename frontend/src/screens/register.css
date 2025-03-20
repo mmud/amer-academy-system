@@ -1,0 +1,193 @@
+
+
+  form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+    background: #FFFFFF;
+    width: 80%;
+    max-width: 1200px;
+    min-height: 650px;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  form .left{
+    width: 60%;
+    background-color: #ff7300;
+    position: relative;
+  }
+  form label{
+    text-align: left !important;
+  }
+
+  form .left img{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    filter: sepia(1);
+  }
+
+  form .right{
+    width: 40%;
+    height: 100%;
+    padding: 20px;
+    margin: auto;
+  }
+
+  .backtohome{
+    text-align:"left";
+    padding: 20px;
+    display:block;
+    width:min-content;
+    font-weight:bolder;
+    font-size:20px;
+    position: relative;
+    z-index: 2;
+
+  }
+  .backtohome::after{
+    position: absolute;
+    width: 60%;
+    content: "";
+    height: 2px;
+    background-color: white;
+    z-index: 2;
+    left: 50%;
+    transform: translate(-50%,0);
+    -webkit-transform: translate(-50%,0);
+    -moz-transform: translate(-50%,0);
+    -ms-transform: translate(-50%,0);
+    -o-transform: translate(-50%,0);
+    bottom: 10px;
+}
+
+  form input {
+    font-family: "Roboto", sans-serif;
+    outline: 0;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 5px 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+  }
+
+  form button {
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: #f48021;
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+  }
+
+  form button:hover,.form button:active,.form button:focus {
+    background: #bd631a;
+  }
+
+  form .message {
+    margin: 15px 0 0;
+    color: #b3b3b3;
+    font-size: 12px;
+  }
+
+  form .message a {
+    color: #4CAF50;
+    text-decoration: none;
+  }
+
+  form .register-form {
+    display: none;
+  }
+
+  .register-form .logo{
+    width: 100px;
+  }
+
+  div.radio-with-Icon {
+    display: block;
+  }
+  div.radio-with-Icon p.radioOption-Item {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    box-sizing: border-box;
+    margin: 25px 15px;
+    border: none;
+  }
+  div.radio-with-Icon p.radioOption-Item label {
+    display: block;
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ff7300;
+    color: #ff7300;
+    cursor: pointer;
+    opacity: .8;
+    transition: none;
+    font-size: 13px;
+    padding-top: 10px;
+    text-align: center;
+    margin: 0 !important;
+    text-align: center !important;
+    font-weight: bold;
+  }
+  div.radio-with-Icon p.radioOption-Item label:hover, div.radio-with-Icon p.radioOption-Item label:focus, div.radio-with-Icon p.radioOption-Item label:active {
+    opacity: .5;
+    background-color: #ff7300;
+    color: #fff;
+    margin: 0 !important;
+  }
+  div.radio-with-Icon p.radioOption-Item label::after, div.radio-with-Icon p.radioOption-Item label:after, div.radio-with-Icon p.radioOption-Item label::before, div.radio-with-Icon p.radioOption-Item label:before {
+    opacity: 0 !important;
+    width: 0 !important;
+    height: 0 !important;
+    margin: 0 !important;
+  }
+  div.radio-with-Icon p.radioOption-Item label i.fa-solid {
+    display: block;
+    font-size: 50px;
+    width: min-content;
+    margin: auto;
+  }
+  div.radio-with-Icon p.radioOption-Item input[type="radio"] {
+    opacity: 0 !important;
+    width: 0 !important;
+    height: 0 !important;
+  }
+  div.radio-with-Icon p.radioOption-Item input[type="radio"]:active ~ label {
+    opacity: 1;
+  }
+  div.radio-with-Icon p.radioOption-Item input[type="radio"]:checked ~ label {
+    opacity: 1;
+    border: none;
+    background-color: #ff7300;
+    color: #fff;
+  }
+  div.radio-with-Icon p.radioOption-Item input[type="radio"] + label:before, div.radio-with-Icon p.radioOption-Item input[type="radio"] + label:after {
+    margin: 0 !important;
+  }
+
+  @media (max-width:1024px) {
+    form .left{
+      display: none;
+    }
+    form .right{
+      width: 100%;
+    }
+  }

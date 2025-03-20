@@ -1,0 +1,110 @@
+.section{
+    text-align: right;
+    background-color: #f48021;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    color: white;
+    font-weight: bold;
+    padding: 20px;
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.section .title{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.section .title button{
+    background-color: #8d4b16;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    color: white;
+}
+
+.block{
+    text-align: right;
+    background-color: white;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    color: #f48021;
+    font-weight: bold;
+    padding: 20px;
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.sectionpage .block{
+    cursor: pointer;
+
+}
+
+.block i{
+    margin: 0 0 0 10px;
+    background-color: #f48021;
+    width: 40px;
+    height:  40px;
+    border-radius:50%;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    -ms-border-radius:50%;
+    -o-border-radius:50%;
+    color: white;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.blockactive{
+    text-align: right;
+    background-color: #8d4b16;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    color: white;
+    font-weight: bold;
+    padding: 20px;
+    font-size: 20px;
+    margin: 20px 0;
+    cursor: pointer;
+}
+
+.blockactive i{
+    margin: 0 0 0 10px;
+    background-color: white;
+    width: 40px;
+    height:  40px;
+    border-radius:50%;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    -ms-border-radius:50%;
+    -o-border-radius:50%;
+    color: #8d4b16;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sectionlink{
+margin: auto;
+display: block;
+width: fit-content;
+}
+
+.sectionlink button{
+    padding: 30px 60px;
+}
