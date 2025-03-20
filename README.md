@@ -94,8 +94,8 @@ AmerAcademy is an online platform for math courses designed to serve students an
 
 ### Exam
 ![Homepage](images/exam.jpg)
-![Homepage](images/exam1.png)
 ![Homepage](images/exam2.png)
+![Homepage](images/exam3.png)
 
 
 ### Dashboard
