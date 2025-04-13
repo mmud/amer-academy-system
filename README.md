@@ -82,26 +82,28 @@ AmerAcademy is an online platform for math courses designed to serve students an
 ![Homepage](images/home2.png)
 
 ### Register
-![Homepage](images/register.jpg)
+![Register](images/register.jpg)
 
 ### Wallet
-![Homepage](images/wallet.png)
+![Wallet](images/wallet.png)
 
 ### Courses Page
-![Homepage](images/courses.jpg)
-![Homepage](images/course.jpg)
-![Homepage](images/couepage.jpg)
+![CoursesPage](images/courses.jpg)
+![CoursesPage](images/course.jpg)
+![CoursesPage](images/couepage.jpg)
 
 ### Exam
-![Homepage](images/exam.jpg)
-![Homepage](images/exam2.png)
-![Homepage](images/exam3.png)
+![Exam](images/exam.jpg)
+![Exam](images/exam2.png)
+![Exam](images/exam3.png)
 
 
 ### Dashboard
-![Homepage](images/dashboard.jpg)
-![Homepage](images/dashboard2.jpg)
+![Dashboard](images/dashboard.jpg)
+![Dashboard](images/dashboard2.jpg)
 
+### ERD
+![ERD](images/ameracademyERD.png)
 ---
 
 ## 📈 Achievements
